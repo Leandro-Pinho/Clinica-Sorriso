@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-br"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Clíncica Sorriso </title>
+        <link rel="stylesheet" type="text/css" href="./style.css" >
+        <script src="./scripts.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <a href='Index.Html'><img src="image/dente.png"></a>
+           <ul>
+             <li><a href="Index.Html">HOME</a></li>
+             <li><a href="Tratamentos.html">TRATAMENTOS</a></li>
+             <li><a href="#contato">CONTATO</a></li>
+           </ul>
+             <form class="busca">
+                <input type="search" placeholder="Faça sua Busca!" aria-label="Search">
+                <button type="submit">Buscar</button>
+             </form>
+        </nav> 
+        <section>
+            <div class="slideshow-container">
+                <div class="slideshow-inner">
+                    <div class="mySlides fade">
+                        <img  src="image/clinica-odontologica.png" style='width: 100%;' alt="sally lightfoot crab"/>
+                        <div class="text">ESTRUTURA, Técnicas modernas e tratamentos de excelência</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img  src="image/05.jpg" style='width: 100%;' alt="fighting nazca boobies"/>
+                        <div class="text">IMPLANTES DENTÁRIOS: Melhore sua qualidade de vida com implantes dentários!</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img  src="image/01.jpg" style='width: 100%;' alt="otovalo waterfall"/>
+                        <div class="text">CIRURGIAS GERAIS </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img  src="image/04.jpg" style='width: 100%;' alt="pelican"/>
+                        <div class="text">ESTÉTICA DENTAL PERFEITA: devolva a harmonia ao seu sorriso.</div>
+                    </div>
+                </div>
+                <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+                <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+            </div>
+            <br/>
+            <div style='text-align: center;'>
+                <span class="dot" onclick='currentSlide(1)'></span>
+                <span class="dot" onclick='currentSlide(2)'></span>
+                <span class="dot" onclick='currentSlide(3)'></span>
+                <span class="dot" onclick='currentSlide(4)'></span>
+            </div>
+                
+            <header>
+                <img src="./image/Dr.%20Leandro.jpg" alt="Dr. Leandro Pinho">
+                <h3>Dr. Leandro Pinho é cirurgião-dentista em São Paulo (CRO 90260) especialista em Periodontia e Ortodontia pela Universidade de São Paulo – USP.</h3>
+                <p>Como a sua principal área de atuação é em casos complexos, decidiu buscar uma especialidade que lhe permitisse tratar pacientes que necessitam de procedimentos reconstrutivos, de implantes dentários e restaurações estéticas. Portanto realizou o curso de especialização em Periodontia pela FUNDECTO – USP.</p>
+            </header>
+            <article class="box">
+                <div class="foto1">
+                    <img src="./image/estrutura.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies odio lectus, sit amet interdum tellus rhoncus in. Cras convallis dolor ac lacus vehicula, vitae faucibus dolor gravida.</p>
+                </div>
+                <div class="foto2">
+                    <img src="./image/evelina-zhu.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies odio lectus, sit amet interdum tellus rhoncus in. Cras convallis dolor ac lacus vehicula, vitae faucibus dolor gravida.</p>
+                </div>
+                <div class="foto3">
+                    <img src="./image/02.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies odio lectus, sit amet interdum tellus rhoncus in. Cras convallis dolor ac lacus vehicula, vitae faucibus dolor gravida.</p>
+                </div>
+            </article>
+            <footer class="box2">
+                <form action="">
+                    <h3>Entre em Contato</h3>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input required type="text" id="nome" placeholder="Escreva seu nome"/>
+                    </div>
+                    <div class="nome">
+                        <label for="email">E-mail:</label>
+                        <input type="email" onblur="validarEmail()" onfocus="redefinirMsg()" id="email" placeholder="Digite seu e-mail" />
+                        <span id="error-email"></span>
+                    </div>
+                    <div>
+                        <label for="msg">Mensagem:</label>
+                        <textarea required id="msg" name="usuario_msg" placeholder="Deixe sua mensagem!"></textarea>
+                    </div>
+
+                    <div class="button">
+                        <button type="submit">Enviar sua mensagem</button>
+                    </div>
+                </form>
+            
+                <div class="foto5"> 
+                    <p><a name="contato">CLINICA SORRISO</a><br/>SAÚDE E ESTÉTICA ORAL</p>
+                    <p>Telefone:  +55 11 38623369</p>
+                    <p>Email: clinicasorriso@clinicasorriso.com.br</p>
+                    <p>Rua Apiacas, 461 - Perdizes<br/>São Paulo, SP - CEP 05017-020</p>
+                </div>
+                <div class="foto6">
+                    <img src="./image/map1.png">
+                </div>
+            </footer>
+        </section>
+        <footer class="rodape">
+            <p>Copyright</p>
+            <a href="https://www.facebook.com/"><img src="image/Icone-facebook.png"></a>
+            <a href="https://twitter.com/"><img src="image/twit.png"></a>
+            <a href="https://www.whatsapp.com/"><img src="image/whats.png"></a>
+        </footer>
+    </body>
+</html>
+            
